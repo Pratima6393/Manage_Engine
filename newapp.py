@@ -198,9 +198,9 @@ st.write("Use 'create request' or 'view request' (buttons provided). Fill settin
 
 # Sidebar for configuration
 st.sidebar.header("Configuration")
-DEFAULT_URL = os.getenv("MG_URL", "https://srvdesk.wavecorp.in/api/v3/requests")
-DEFAULT_TOKEN = os.getenv("AUTHTOKEN", "5B6F41C9-12C0-4AE0-8AB1-8052FFBE5ABF")
-DEFAULT_TECH_KEY = os.getenv("TECHNICIAN_KEY", "5B6F41C9-12C0-4AE0-8AB1-8052FFBE5ABF")
+DEFAULT_URL = os.getenv("MG_URL")
+DEFAULT_TOKEN = os.getenv("AUTHTOKEN")
+DEFAULT_TECH_KEY = os.getenv("TECHNICIAN_KEY")
 
 api_url = st.sidebar.text_input("API endpoint (requests)", DEFAULT_URL)
 authtoken = st.sidebar.text_input("Authtoken (header)", DEFAULT_TOKEN)
